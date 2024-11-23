@@ -287,6 +287,7 @@ class TestKauppa(unittest.TestCase):
         varasto_mock.saldo.side_effect = varasto_saldo
         varasto_mock.hae_tuote.side_effect = varasto_hae_tuote
 
+
         # alustetaan kauppa
         kauppa = Kauppa(varasto_mock, pankki_mock, viitegeneraattori_mock)
         kauppa.aloita_asiointi()
